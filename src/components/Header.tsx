@@ -22,13 +22,7 @@ const Header = () => {
             <Moon className="size-4" />
           )}
         </Button>
-        <Button
-          variant="outline"
-          size="icon"
-          className="w-9 h-9"
-          onClick={toggleTheme}
-          asChild
-        >
+        <Button variant="outline" size="icon" className="w-9 h-9" asChild>
           <a
             href="https://github.com/rohitjuyal21/favi-grab-client"
             target="_blank"

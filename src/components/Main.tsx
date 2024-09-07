@@ -95,7 +95,7 @@ const Main: React.FC = () => {
     <div className="flex flex-col items-center justify-center my-8">
       <WordPullUp
         className="text-3xl md:text-4xl font-semibold tracking-[-0.02em]"
-        words="Download favicons in multiple sizes"
+        words="Download favicons in your preferred size"
       />
       <Form {...form}>
         <form
