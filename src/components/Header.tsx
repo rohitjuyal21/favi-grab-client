@@ -1,6 +1,6 @@
 import { useTheme } from "@/useTheme";
 import { Button } from "./ui/button";
-import { Moon, Sun } from "lucide-react";
+import { Github, Moon, Sun } from "lucide-react";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
@@ -9,18 +9,34 @@ const Header = () => {
       <a href="/" className="text-2xl text-primary font-bold">
         FaviGrab 🔍
       </a>
-      <Button
-        variant="outline"
-        size="icon"
-        className="w-9 h-9"
-        onClick={toggleTheme}
-      >
-        {theme === "dark" ? (
-          <Sun className="size-4" />
-        ) : (
-          <Moon className="size-4" />
-        )}
-      </Button>
+      <div className="flex gap-2 items-center">
+        <Button
+          variant="outline"
+          size="icon"
+          className="w-9 h-9"
+          onClick={toggleTheme}
+        >
+          {theme === "dark" ? (
+            <Sun className="size-4" />
+          ) : (
+            <Moon className="size-4" />
+          )}
+        </Button>
+        <Button
+          variant="outline"
+          size="icon"
+          className="w-9 h-9"
+          onClick={toggleTheme}
+          asChild
+        >
+          <a
+            href="https://github.com/rohitjuyal21/favi-grab-client"
+            target="_blank"
+          >
+            <Github className="size-4" />
+          </a>
+        </Button>
+      </div>
     </header>
   );
 };
