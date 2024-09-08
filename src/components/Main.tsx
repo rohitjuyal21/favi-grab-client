@@ -84,7 +84,7 @@ const Main: React.FC = () => {
       .replace(/^www\./, "")
       .split(".")
       .slice(-2, -1)[0];
-    link.download = `${domain}.png`;
+    link.download = `${domain}`;
     document.body.appendChild(link);
     link.click();
     toast.success("Downloaded");
