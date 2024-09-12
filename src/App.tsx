@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Footer />
       </div>
       <Toaster />
+      <Analytics />
     </main>
   );
 }
